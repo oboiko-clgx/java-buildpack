@@ -1,0 +1,25 @@
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
+                      https://maven.apache.org/xsd/settings-1.0.0.xsd">
+
+  <profiles>
+    <profile>
+      <id>dwbench-m2-repos</id>
+      <repositories>
+        <repository>
+          <id>dwbench-m2-releases</id>
+          <url>https://repo.corelogic.net/nexus/content/repositories/dwbench-m2-releases</url>
+        </repository>
+        <repository>
+          <id>dwbench-m2-snapshots</id>
+          <url>https://repo.corelogic.net/nexus/content/repositories/dwbench-m2-snapshots</url>
+        </repository>
+      </repositories>
+    </profile>
+  </profiles>
+ 
+  <activeProfiles>
+    <activeProfile>dwbench-m2-repos</activeProfile>
+  </activeProfiles>
+</settings>
